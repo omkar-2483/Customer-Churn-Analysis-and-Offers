@@ -1,0 +1,106 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 15px 30px;
+    margin: 0;
+    color: white;
+}
+
+.navbar-logo h1 {
+    margin: 0;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-links li a:hover {
+    text-decoration: underline;
+}
+
+
+.footer {
+    background-color: #343a40; /* Dark background for the footer */
+    color: white; /* Default text color */
+    padding: 20px; /* Padding around footer content */
+    margin: 0; /* Remove margin */
+    text-align: center; /* Center-align text */   
+}
+
+.footer-content h2 {
+    margin: 0; /* Remove margin from h2 */
+    color: #4a90e2; /* Soft blue for the heading */
+}
+
+.footer-links {
+    margin: 15px 0; /* Margin above and below links */
+}
+
+.footer-links a {
+    color: #66ccff; /* Light blue color for links */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 10px; /* Margin around links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-links a:hover {
+    color: #ffffff; /* Change to white on hover for contrast */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer-socials {
+    margin: 10px 0; /* Margin above and below social links */
+}
+
+.footer-socials a {
+    color: #66ccff; /* Light blue for social links */
+    margin: 0 10px; /* Margin around social links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-socials a:hover {
+    color: #ffffff; /* Change to white on hover for contrast */
+}
+
+.footer-bottom {
+    margin-top: 15px; /* Margin above the bottom text */
+    font-size: 14px; /* Smaller font size */
+    color: #bbb; /* Light grey for the bottom text */
+}
+
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-socials {
+    margin: 10px 0;
+}
+
+.footer-socials a {
+    color: white;
+    margin: 0 10px;
+}
+
+.footer-bottom {
+    margin-top: 15px;
+    font-size: 14px;
+}
+

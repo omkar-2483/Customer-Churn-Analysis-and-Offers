@@ -1,0 +1,77 @@
+/* HomePage.css */
+/* HomePage.css */
+.hero {
+    background-image: url('https://plus.unsplash.com/premium_photo-1661963727462-edd27f1123a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dGVsZWNvbXxlbnwwfHwwfHx8MA%3D%3D'); /* Updated image category */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    color: #ffffff; /* White text color for better contrast */
+    padding: 120px 20px; /* Increased padding for a spacious feel */
+    text-align: center; /* Center-align text */
+    position: relative; /* For positioning the overlay */
+    display: flex; /* Use flexbox for centering content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+}
+
+.hero-content {
+    position: relative; /* Position content relative to the parent */
+    z-index: 1; /* Ensure content is above the overlay */
+    max-width: 800px; /* Limit the width of the content */
+}
+
+h1 {
+    font-size: 3.5em; /* Increased font size for the heading */
+    margin-bottom: 20px; /* Space below heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text shadow for depth */
+}
+
+p {
+    font-size: 1.5em; /* Font size for the paragraph */
+    margin-bottom: 30px; /* Space below paragraph */
+    font-weight: 300; /* Light font weight for the paragraph */
+}
+
+button {
+    padding: 15px 30px; /* More padding for the button */
+    font-size: 1em; /* Font size for the button */
+    background-color: #28a745; /* Fresh green color for the button */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 30px; /* Fully rounded button */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #218838; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+.features, .about, .testimonials, .contact {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.feature-item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+blockquote {
+    border-left: 5px solid #007bff;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-style: italic;
+}

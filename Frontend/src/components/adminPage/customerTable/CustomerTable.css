@@ -1,0 +1,87 @@
+/* CustomerTable.css */
+
+body {
+    font-family: Arial, sans-serif; /* Default font for the app */
+    background-color: #f4f4f9; /* Light background for the page */
+    margin: 0;
+    padding: 20px;
+}
+
+table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Merge borders of adjacent cells */
+    margin-top: 20px; /* Space above the table */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for table */
+    background-color: white; /* White background for the table */
+    border-radius: 8px; /* Rounded corners for the table */
+    overflow: hidden; /* Ensure rounded corners apply */
+}
+
+th, td {
+    border: 1px solid #dddddd; /* Light grey border for table cells */
+    text-align: left; /* Align text to the left */
+    padding: 12px 15px; /* Padding inside cells */
+}
+
+th {
+    background-color: #007bff; /* Professional blue background for headers */
+    color: white; /* White text color for headers */
+    font-weight: bold; /* Bold text for headers */
+    text-transform: uppercase; /* Uppercase text for headers */
+    letter-spacing: 0.05em; /* Slightly increased letter spacing */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light background for even rows */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+td {
+    font-size: 14px; /* Standard font size for table data */
+}
+
+button {
+    padding: 10px 15px; /* Padding for buttons */
+    margin: 5px; /* Margin around buttons */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #28a745; /* Success green color for buttons */
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+button:disabled {
+    background-color: #cccccc; /* Grey background for disabled button */
+    cursor: not-allowed; /* Not-allowed cursor for disabled button */
+}
+
+button:hover:not(:disabled) {
+    background-color: #218838; /* Darker green on hover for enabled buttons */
+}
+
+div {
+    text-align: center; /* Center-align pagination controls */
+    margin-top: 20px; /* Margin above pagination controls */
+}
+
+.error {
+    color: red; /* Error message color */
+    text-align: center; /* Center align error message */
+    margin-bottom: 10px; /* Margin below error message */
+    font-weight: bold; /* Bold text for error message */
+}
+
+/* Add a responsive design for smaller screens */
+@media (max-width: 768px) {
+    table, th, td {
+        font-size: 12px; /* Smaller font size for smaller screens */
+    }
+
+    button {
+        padding: 8px 12px; /* Smaller padding for buttons on smaller screens */
+    }
+}

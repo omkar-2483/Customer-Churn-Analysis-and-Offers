@@ -1,0 +1,40 @@
+/* Dashboard.css */
+
+.dashboard {
+    font-family: Arial, sans-serif; /* Set a default font for the dashboard */
+    padding: 20px; /* Add padding around the dashboard */
+}
+
+.charts-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of charts */
+    justify-content: space-between; /* Space out the charts */
+    gap: 20px; /* Gap between charts */
+}
+
+.chart {
+    flex: 1; /* Allow charts to grow equally */
+    min-width: 300px; /* Minimum width for each chart */
+    background-color: #ffffff; /* Background color for charts */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    padding: 15px; /* Padding inside the chart container */
+}
+
+h2 {
+    text-align: center; /* Center align the chart titles */
+    color: #333; /* Darker text color for titles */
+    margin-bottom: 15px; /* Space below the titles */
+}
+
+p {
+    text-align: center; /* Center align loading message */
+    font-size: 1.2em; /* Slightly larger font size for loading message */
+    color: #555; /* Grey color for the loading message */
+}
+
+/* Chart Styles */
+canvas {
+    max-height: 300px; /* Set a maximum height for charts */
+    max-width: 100%; /* Make sure the chart doesn't overflow */
+}
